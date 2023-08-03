@@ -1,0 +1,58 @@
+.santa{
+    background-image: url(../images/santa.giff);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 100px;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 150px;
+    left: -300px;
+    animation: santa 10s infinite ease-in-out;
+}
+@keyframes santa{
+    0%{
+        transform: translate(-300px,20px) rotateY(180deg) scale(1)
+    }
+    10%{
+        transform: translate(400px,100px) rotateY(180deg) scale(1.2)
+    }
+    20%{
+        transform: translate(800px,20px) rotateY(180deg) scale(.7)
+    }
+    30%{
+        transform: translate(1200px,100px) rotateY(180deg) scale(1.2)
+    }
+    40%{
+        transform: translate(1600px,20px) rotateY(180deg) scale(1.7)
+    }
+    50%{
+        transform: translate(2000px,100px) rotateY(180deg) scale(1.2)
+    }
+    60%{
+        transform: translate(1500px,20px)  scale(1.2)
+    }
+    70%{
+        transform: translate(1000px,100px)  scale(1.2)
+    }
+    80%{
+        transform: translate(500px,20px)  scale(1.2)
+    }
+    90%{
+        transform: translate(200px,100px)  scale(1.2)
+    }
+    100%{
+        transform: translate(-300px,20px)  scale(1.2)
+    }
+}
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
